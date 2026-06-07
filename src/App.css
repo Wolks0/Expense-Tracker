@@ -1,0 +1,168 @@
+/* ---------- GLOBAL STYLES ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #c3cfe2, #f5f7fa);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ---------- APP CONTAINER ---------- */
+.app-container {
+  margin-top: 60px;
+  width: 92%;                  /* widened slightly */
+  max-width: 850px;            /* increased from 700px */
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 40px 50px;          /* increased padding */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+/* ---------- FORM ---------- */
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.expense-form input {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.55);
+  color: #333;
+}
+
+.expense-form input:focus {
+  border-color: #6366f1;
+  outline: none;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------- BUTTON ---------- */
+.expense-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+}
+
+.expense-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+}
+
+/* ---------- SUMMARY ---------- */
+.summary-container {
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.summary-container h2 {
+  color: #6366f1;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.summary-container li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+}
+
+.summary-container li:last-child {
+  border-bottom: none;
+}
+
+/* ---------- EXPENSE LIST ---------- */
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ---------- EXPENSE ITEM ---------- */
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(10px);
+}
+
+.expense-item h3 {
+  margin: 0;
+  font-weight: 500;
+  color: #111;
+}
+
+.expense-item p {
+  margin: 3px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.expense-item button {
+  background: none;
+  border: none;
+  color: #ff3b30;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.expense-item button:hover {
+  color: #d32f2f;
+  transform: scale(1.15);
+}
+
+/* ---------- TOTAL BAR ---------- */
+.total-bar {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
